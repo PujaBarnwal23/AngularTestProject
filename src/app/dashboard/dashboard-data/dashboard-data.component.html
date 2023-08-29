@@ -1,0 +1,14 @@
+<!-- <button (click)="onGroup()">Group Toggle</button> -->
+
+<h2> Dashboard Module</h2>
+<ag-grid-angular
+    style="height: 350px;"
+    class="ag-theme-balham"
+    [columnDefs]="columnDefs"
+    [rowData]="productData"
+    [groupDisplayType]="groupDisplayType"
+    [animateRows]="true"
+    (gridReady)="onGridReady($event)"
+    
+    >
+</ag-grid-angular>

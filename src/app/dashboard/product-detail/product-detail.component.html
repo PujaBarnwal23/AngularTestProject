@@ -1,0 +1,52 @@
+<!-- <div class="card" style="width: 18rem;" *ngIf="productData">
+    <div class="card-body">
+      <h5 class="card-title">{{productData.name}}</h5>
+      <h6 class="card-subtitle mb-2 text-body-secondary">{{productData.type}}</h6>
+      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <a href="#" class="card-link">Card link</a>
+      <a href="#" class="card-link">Another link</a>
+    </div>
+  </div> -->
+
+  <h1 class="card-title text-center pt-10"> Product Summary</h1>  
+  <div class="global-container detail-form">  
+    <div class="row" style="margin:0;padding:0;">
+      <div class="col-md">
+        <table class="table" *ngIf="productData">
+    
+          <tbody>
+            <tr>
+              <td>id</td>
+              <td>{{productData.id}}</td>
+            </tr>
+            <tr>
+              <td>Product Name</td>
+              <td>{{productData.name}}</td>
+            </tr>
+            <tr>
+              <td>Product Type</td>
+              <td>{{productData.type}}</td>
+            </tr>
+            <tr>
+              <td>Price</td>
+              <td>{{productData.price}}</td>
+            </tr>
+            <tr>
+              <td>Units</td>
+              <td>{{productData.units}}</td>
+            </tr>
+            <tr>
+              <td>Manufacturing</td>
+              <td>{{productData.manufacturing}}</td>
+            </tr>
+            
+  
+          </tbody>
+        </table>
+      </div>
+
+      <button type="button" class="btn btn-primary btn-lg" routerLink="/dashboard">Back to Dashboard page</button>
+    </div>
+  </div>
+
+ 
